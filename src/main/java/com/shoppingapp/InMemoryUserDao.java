@@ -18,7 +18,7 @@ public class InMemoryUserDao implements UserDao{
     @Override
     public boolean hasUser(User user) {
         for(User u:users){
-            if(u.getUsername().equals(user.getUsername())){
+            if(u.getUsername().equals(user.getUsername()) && u.getPassword().equals(user.getPassword())){
                 return true;
             }
         }
