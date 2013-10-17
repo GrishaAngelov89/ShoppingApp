@@ -1,7 +1,7 @@
 package com.shoppingapp.web;
 
 import com.google.sitebricks.At;
-import com.google.sitebricks.http.Get;
+import com.google.sitebricks.Show;
 
 /**
  * The home page that our users will see at the top level URI "/".
@@ -12,7 +12,8 @@ import com.google.sitebricks.http.Get;
  *
  * @author dhanji@gmail.com (Dhanji R. Prasanna)
  */
-@At("/")
-public class HomePage {
+@At("/Menu")
+@Show("Menu.html")
+public class MenuPage implements Page{
 
 }
